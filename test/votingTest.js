@@ -11,7 +11,6 @@ describe("votingTest", function () {
   });
   it("should vote", async function () {
     await Votingtest.vote(0);
-    
   });
   it("should getwinner", async function () {
     await Votingtest.getWinner();
