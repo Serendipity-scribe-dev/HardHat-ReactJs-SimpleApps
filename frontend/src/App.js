@@ -38,11 +38,6 @@ function App() {
         setContract(tempContract);
         setUserAddress(address);
 
-        setTransactionHistory([
-          ...transactionHistory,
-          { msg: newMessage, time: new Date().toLocaleString() }
-        ]);
-        
 
         // Fetch initial data
         fetchMessage(tempContract);
