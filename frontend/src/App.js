@@ -69,15 +69,6 @@ function App() {
     }
   }
 
-  // async function fetchBalance(tempSigner) {
-  //   try {
-  //     const balance = await provider.getBalance(await tempSigner.getAddress());
-  //     setEthBalance(ethers.formatEther(balance));
-  //   } catch (error) {
-  //     console.error("Error fetching balance:", error);
-  //   }
-  // }
-
     // ✅ Fix: use useCallback to prevent re-renders
     const fetchBalance = useCallback(async (signer, provider) => {
       if (!signer || !provider) return;
